@@ -1,0 +1,25 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "cd server && npm run start",
+    "cluster":"cd server && npm run cluster",
+    "start_full_app": "concurrently \"npm run client\" \"npm run server\"",
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "install": "concurrently \"npm run install-client\" \"npm run install-server\"",
+    "deploy_client": "cd client && npm run build",
+    "deploy": "concurrently \"npm run deploy_client\" \"npm run server\"",
+    "deploy-cluster": "concurrently \"npm run deploy_client\"  \"npm run cluster\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}

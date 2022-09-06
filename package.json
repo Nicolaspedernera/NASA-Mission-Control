@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cd server && npm run test",
+    "test": "cd server && npm run test-watch",
     "client": "cd client && npm start",
     "server": "cd server && npm run start",
     "cluster":"cd server && npm run cluster",

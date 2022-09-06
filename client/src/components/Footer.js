@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React from 'react';
 import { Footer as ArwesFooter, Paragraph } from "arwes";
 import Centered from "./Centered";
 
